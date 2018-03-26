@@ -4,4 +4,4 @@ Puppet modules are written using the Ruby programming language. For this lab to 
 
 TODO: Include some basic instructions on how to install Ruby using the main package managers.
 
-2. [Create Target to Manage](../2-create-target-to-manage)
+[2. Create Target to Manage](../2-create-target-to-manage)
