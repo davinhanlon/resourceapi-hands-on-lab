@@ -1,5 +1,5 @@
 # resourceapi-hands-on-lab
-Create a Puppet module.
+> Create a Puppet module.
 
 Puppet provides a number of built-in resource types, such as package, service, file, user etc. - all listed online. It is possible to add custom resources to Puppet using Types and Providers, so that users can extend Puppet to manage extra stuff.
 
