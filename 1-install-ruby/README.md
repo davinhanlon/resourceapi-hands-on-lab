@@ -1,4 +1,4 @@
-#Install Ruby
+# Install Ruby
 
 Puppet modules are written using the Ruby programming language. For this lab to work you must install Ruby. Following the instructions below to install Ruby using the main package managers.
 
