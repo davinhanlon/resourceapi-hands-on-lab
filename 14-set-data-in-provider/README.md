@@ -33,4 +33,4 @@ Deploy the code again: cp -R
 
 Now that we've done all that we'll create a manifest to apply some data. This will set the temperature of the thermostat.
 
-[15. Create Manifest](15-create-manifest)
+[15. Create Manifest](../15-create-manifest)
