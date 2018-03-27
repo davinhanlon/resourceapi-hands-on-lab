@@ -19,4 +19,4 @@ spec/spec_helper.rb:
 
 TODO add some explanation as to why this is necessary - and will it always be necessary.
 
-[6. Run PDK Update](6-run-pdk-update)
+[6. Run PDK Update](../6-run-pdk-update)
