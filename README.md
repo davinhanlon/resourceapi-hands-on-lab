@@ -29,4 +29,6 @@ Some random notes:
 5. It is possible to extend existing types. Can be many providers to one type. Providers per platforms is possible. Same Puppet code can interact with providers.
 6. Types and Providers are best when a CLI or API is required to configure an application (e.g. config files can’t be manipulated directly).
 
-[Install Ruby](./01-install-ruby)
+Let's get started.
+
+[01 Install Ruby](./01-install-ruby)
