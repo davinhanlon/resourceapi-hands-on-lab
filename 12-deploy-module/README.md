@@ -13,4 +13,4 @@ The module is now deployed and Puppet will recognise the type. To check this typ
 
 Now let's use the module.
 
-[13. Get Data from the Target](13-get-data-from-target)
+[13. Get Data from the Target](../13-get-data-from-target)
