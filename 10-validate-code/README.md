@@ -39,3 +39,6 @@ warning: rubocop: lib/puppet/provider/temp/temp.rb:10:11: Lint/UnderscorePrefixe
 corrected: rubocop: lib/puppet/provider/temp/temp.rb:11:21: Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
 ```
 
+Now, we'll move on to tests
+
+[11. Write and Execute Tests](../11-write-and-execute-tests)
