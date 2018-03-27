@@ -12,3 +12,5 @@ temp { 'stattemperature':
   temp   => 24,
 }
 ```
+
+[16 Apply Manifest](16-apply-manifest)
