@@ -13,4 +13,4 @@ temp { 'stattemperature':
 }
 ```
 
-[16 Apply Manifest](16-apply-manifest)
+[16 Apply Manifest](../16-apply-manifest)
