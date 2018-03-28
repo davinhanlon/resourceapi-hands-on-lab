@@ -48,12 +48,15 @@ This gets information from the target. It is called when the ```puppet resource 
 
 ## create
 TODO when is this executed by Puppet?
+when ensure changes from absent -> present
+have a useful error message when deleting an object. Not relevant.
 
 ## update
 This is the set operation. It is called when ```puppet apply <manifest.pp>``` is called and the data is not already set on the target. This is the code that writes information to the target.
 
 ## delete
 TODO is this just when ensure = absent is set?
+when ensure changes from present -> absent. Not relevant.
 
 Not all 4 functions must be implemented for a provider to be valuable. For example, on some remote targets it may not be possible to delete resource data.
 
