@@ -1,34 +1,27 @@
-# resourceapi-hands-on-lab
-> Create a Puppet module.
+# Puppet Resource API Hands on Lab
 
-Puppet provides a number of built-in resource types, such as package, service, file, user etc. - all listed online. It is possible to add custom resources to Puppet using Types and Providers, so that users can extend Puppet to manage extra stuff.
+In this lab we'll go through how to create a Puppet module that uses the Resource API. Puppet modules are components that are used to manage resources, for example configuring a web server. Puppet provides a number of built-in resource types, such as package, service, file, user - full list available [here](https://puppet.com/docs/puppet/5.3/type.html). Puppet provides the ability for developers to add their own resource types so that additional resources can be managed.
 
-This is generally considered a difficult process, with many people avoiding using types and providers in their modules.
+This requires the developer to create types and providers. Traditionally this was considered difficult and the code required was considered cumbersome. The Resource aims to make this an easier process.
 
-The Resource API has been designed and developed with the intention of goal of making it easier to write custom types and providers.
+## What you'll learn
+* How to create a Puppet module using the [Puppet Development Kit](https://puppet.com/download-puppet-development-kit)
+* How to write types and providers that extend Puppet's ability to manage resources
+* How to manage remote resources that have no Puppet agent installed
 
-This tutorial will help you write a module that creates a custom type and provider using the Resource API.
+## What you'll need
+* A computer on which you have access to install software.
 
-Some random notes:
+## Audience
+The intended audience for this tutorial is Puppet module developers. There is no need to write code as part of the tutorial - code samples are provided throughout.
 
-1. Why use types and providers?
-⋅⋅⋅Idempotent - only change a certain property.
-⋅⋅⋅Prefetch information that is on a system.
-2. Type
-⋅⋅⋅What properties are available for the configuration.
-⋅⋅⋅Make it obvious what it manages.
-⋅⋅⋅These have properties and parameters
-⋅⋅⋅Properties are modifiable - e.g. user name
-⋅⋅⋅Parameter - changes behaviour - e.g. manage home
-3. Provider
-⋅⋅⋅Know about application, commands, options, parameters. Maybe use a Ruby library.
-⋅⋅⋅Methods of the provider are provided to the type.
-⋅⋅⋅Mk resource methods - what are they - omit them?
-⋅⋅⋅For properties - there should be getters and setters - core concept of puppet - using idempotency. Need to explain this using Resource API specific functions in the lab.
-4. Don’t reuse reserved words in types and providers
-5. It is possible to extend existing types. Can be many providers to one type. Providers per platforms is possible. Same Puppet code can interact with providers.
-6. Types and Providers are best when a CLI or API is required to configure an application (e.g. config files can’t be manipulated directly).
+## Types and Providers
+Before we start let's start by explaining types and providers.
+* Types define some data that is being managed. Types are most easily thought of as properties of a resource that is being managed. Types have attributes. For example, ```user``` is a built-in Puppet type that has attributes of name, password, user id etc.
+* Providers are functions that allow types to be manipulated. An example of a provider is a ```get``` function. It enables data to be retrieved from a resource and populates the type with that data.
 
-Let's get started.
+Using types and providers mean that your modules will benefit from the power of Puppet, so native Puppet capability such as idempotency will be inherited automatically.
 
-[01 Install Ruby](./01-install-ruby)
+> Let's get started
+
+[01 Install Prerequisites](./01-install-prerequisites)
