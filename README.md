@@ -22,4 +22,4 @@ Before we start let's start by explaining types and providers.
 
 Using types and providers mean that your modules will benefit from the power of Puppet, so native Puppet capability such as idempotency will be inherited automatically.
 
-> Let's get started [01 Install Prerequisites](./01-install-prerequisites)
+> Let's get started ---> [01 Install Prerequisites](./01-install-prerequisites)
