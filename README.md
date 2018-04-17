@@ -17,11 +17,9 @@ The intended audience for this tutorial is Puppet module developers. There is no
 
 ## Types and Providers
 Before we start let's start by explaining types and providers.
-* Types define some data that is being managed. Types are most easily thought of as properties of a resource that is being managed. Types have attributes. For example, ```user``` is a built-in Puppet type that has attributes of name, password, user id etc.
+* Types define data that is being managed. Types are most easily thought of as properties of a resource that is being managed. Types have attributes. For example, ```user``` is a built-in Puppet type that has attributes of name, password, user id etc.
 * Providers are functions that allow types to be manipulated. An example of a provider is a ```get``` function. It enables data to be retrieved from a resource and populates the type with that data.
 
 Using types and providers mean that your modules will benefit from the power of Puppet, so native Puppet capability such as idempotency will be inherited automatically.
 
-> Let's get started
-
-[01 Install Prerequisites](./01-install-prerequisites)
+> Let's get started [01 Install Prerequisites](./01-install-prerequisites)
